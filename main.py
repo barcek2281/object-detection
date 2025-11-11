@@ -44,16 +44,18 @@ def main():
     
     
     # Load images using OpenCV (images are loaded in BGR format)
-    apple_img = cv2.imread('img/apple.png')
-    appletongue_img = cv2.imread('img/appletongue.png')
+    apple_img = cv2.imread('img/lebron.png')
+    appletongue_img = cv2.imread('img/cat.png')
     robocop_img = cv2.imread('img/robocop.png')
     kake_img = cv2.imread('img/kake.jfif')
     
     
+    
+    
     # Verify images loaded successfully
-    if apple_img is None or appletongue_img is None:
-        print("\n[ERROR] Could not load meme images.")
-        exit(1)
+    # if apple_img is None or appletongue_img is None:
+    #     print("\n[ERROR] Could not load meme images.")
+    #     exit(1)
 
     
     print("[OK] Meme images loaded successfully!")
