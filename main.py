@@ -71,11 +71,9 @@ def main():
     
     d = {
         "face": apple_img, 
-        "robots": robocop_img,
-        "animal": apple_img,
-        "items": apple_img,
-        "fake_faces": appletongue_img,
-        "anime_faces": apple_img 
+
+        "fake": appletongue_img,
+
         }
     
     # ========================================================================
@@ -84,7 +82,7 @@ def main():
     
     # Open the default webcam (index 0)
     # If you have multiple cameras, try changing 0 to 1, 2, etc.
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     
     if not cap.isOpened():
         print("\n[ERROR] Could not open webcam.")

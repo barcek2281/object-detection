@@ -4,11 +4,14 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 
-model = load_model("simple_cnn.h5", compile=False)
+# model = load_model("mobilenetv2_model.h5", compile=False)
+# model = load_model("CNN_RNN.h5", compile=False)
+model = load_model("EfficientNetV2S_finetuned_gpu.h5", compile=False)
+
 model.summary()
 
-IMG_SIZE = (128, 128)
-LABELS = ["face", "robots", "animal", "items", "fake_faces", "anime_faces"] 
+IMG_SIZE = (224, 224)
+LABELS = ["face","fake"] 
 
 def classify_frame(frame) -> tuple[str, int]:
     # Resize and preprocess frame for MobileNetV2
