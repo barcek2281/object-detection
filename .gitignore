@@ -42,3 +42,6 @@ appletongue.png
 !example*.png
 !docs/*.png
 
+CNN_RNN.h5
+EfficientNetV2S_finetuned_gpu.h5
+mobilenetv2_model.h5

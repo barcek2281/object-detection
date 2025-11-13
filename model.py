@@ -11,7 +11,7 @@ model = load_model("EfficientNetV2S_finetuned_gpu.h5", compile=False)
 model.summary()
 
 IMG_SIZE = (224, 224)
-LABELS = ["face","fake"] 
+LABELS = ["Real face","Fake face"] 
 
 def classify_frame(frame) -> tuple[str, int]:
     # Resize and preprocess frame for MobileNetV2
